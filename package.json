@@ -1,0 +1,14 @@
+{
+  "name": "tesseract-hands",
+  "version": "0.1.0",
+  "description": "Hand-tracked 4D tesseract: Python (MediaPipe) tracking, Rust geometry, Electron display.",
+  "main": "app/main.js",
+  "private": true,
+  "scripts": {
+    "build:engine": "cargo build --release --manifest-path engine/Cargo.toml",
+    "start": "npm run build:engine && electron ."
+  },
+  "devDependencies": {
+    "electron": "^44.7.2"
+  }
+}
